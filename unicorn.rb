@@ -1,5 +1,5 @@
 
-@path = "/home/ec2-user/satokenta/twiume/"
+@path = "/home/ec2-user/sinatra/satokenta/"
 
 worker_processes 1
 working_directory @path

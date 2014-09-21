@@ -5,3 +5,5 @@ gem "sinatra-contrib", require: "sinatra/contrib/all"
 
 gem 'slim'
 gem 'unicorn'
+
+gem 'nokogiri'

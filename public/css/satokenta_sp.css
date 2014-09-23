@@ -21,6 +21,7 @@ a:hover, a:focus {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
 }
 
@@ -33,6 +34,7 @@ a:hover, a:focus {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
 }
 
@@ -45,6 +47,7 @@ a:hover, a:focus {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
 }
 
@@ -52,7 +55,7 @@ a:hover, a:focus {
   color: #FFF;
   font-size: 4rem;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 60px;
   font-weight: 800;
 }
 

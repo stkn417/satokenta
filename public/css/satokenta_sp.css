@@ -14,14 +14,14 @@ a:hover, a:focus {
 
 .header1 {
   display: table;
-  height: 400px;
+  height: 200px;
   width: 100%;
   position: relative;
   background: url(/image/satokentacom_top_sp.png) no-repeat center center fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header2 {
@@ -52,7 +52,7 @@ a:hover, a:focus {
   color: #FFF;
   font-size: 4rem;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   font-weight: 800;
 }
 

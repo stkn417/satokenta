@@ -22,6 +22,8 @@ class App < Sinatra::Base
 
     get_blog
 
+    @is_smart_phone = request.user_agent.include?("iPhone") || request.user_agent.include?("Android")
+
     slim :index
   end
 

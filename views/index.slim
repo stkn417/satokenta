@@ -10,42 +10,44 @@
       |Projects
 
     .items
-      .item.col-xs-6.col-sm-3.col-md-3
-        a href="http://snape.ee" target="_blank"
-          img.item-image src="/image/projects/snapeee.png"
-          .item-title
-            |Snapeee
-          .item-description
-            |Engineer / AWS, DevOps
-          .item-time
-            |2012.1 ~ 2014.3
-      .item.col-xs-6.col-sm-3.col-md-3
-        a href="http://aorb.masukachi.com" target="_blank"
-          img.item-image src="/image/projects/aorb.png"
-          .item-title
-            |aorb
-          .item-description
-            |Engineer / AWS, Ruby on Rails
-          .item-time
-            |2013.10 ~
-      .item.col-xs-6.col-sm-3.col-md-3
-        a href="http://bukatsudou.com" target="_blank"
-          img.item-image src="/image/projects/bukatsudou.png"
-          .item-title
-            |Bukatsudou
-          .item-description
-            |CTO / AWS, Ruby on Rails, iOS
-          .item-time
-            |2014.4 ~ 2014.9
-      .item.col-xs-6.col-sm-3.col-md-3
-        a href="http://twiume.satokenta.com" target="_blank"
-          img.item-image src="/image/projects/twiume.png"
-          .item-title
-            |twiume
-          .item-description
-            |Own Project / AWS, Sinatra
-          .item-time
-            |2014.9 ~
+      .item-block.col-xs-12.col-sm-6.col-sm-6
+        .item.col-xs-6.col-sm-6.col-md-6
+          a href="http://snape.ee" target="_blank"
+            img.item-image src="/image/projects/snapeee.png"
+            .item-title
+              |Snapeee
+            .item-description
+              |Engineer / AWS, DevOps
+            .item-time
+              |2012.1 ~ 2014.3
+        .item.col-xs-6.col-sm-6.col-md-6
+          a href="http://aorb.masukachi.com" target="_blank"
+            img.item-image src="/image/projects/aorb.png"
+            .item-title
+              |aorb
+            .item-description
+              |Engineer / AWS, Ruby on Rails
+            .item-time
+              |2013.10 ~
+      .item-block.col-xs-12.col-sm-6.col-sm-6
+        .item.col-xs-6.col-sm-6.col-md-6
+          a href="http://bukatsudou.com" target="_blank"
+            img.item-image src="/image/projects/bukatsudou.png"
+            .item-title
+              |Bukatsudou
+            .item-description
+              |CTO / AWS, Ruby on Rails, iOS
+            .item-time
+              |2014.4 ~ 2014.9
+        .item.col-xs-6.col-sm-6.col-md-6
+          a href="http://twiume.satokenta.com" target="_blank"
+            img.item-image src="/image/projects/twiume.png"
+            .item-title
+              |twiume
+            .item-description
+              |Own Project / AWS, Sinatra
+            .item-time
+              |2014.9 ~
       .clearfix
 
     .menu-title
@@ -53,17 +55,30 @@
 
     .items
       - @titles.each_with_index do |title, index|
-        .item.col-xs-6.col-sm-3.col-md-3
-          a href="#{@link_urls[index]}" target="_blank"
-            img.item-image src="#{@images[index]}"
-            .item-title
-              == title
-            .item-description
-              |
-            .item-time
-              == @publisheds[index]
+        - if index % 2 == 0
+          .item-block.col-xs-12.col-sm-6.col-sm-6
+            .item.col-xs-6.col-sm-6.col-md-6
+              a href="#{@link_urls[index]}" target="_blank"
+                img.item-image src="#{@images[index]}"
+                .item-title
+                  == title
+                .item-description
+                  |
+                .item-time
+                  == @publisheds[index]
+
+            .item.col-xs-6.col-sm-6.col-md-6
+              a href="#{@link_urls[index+1]}" target="_blank"
+                img.item-image src="#{@images[index+1]}"
+                .item-title
+                  == @titles[index+1]
+                .item-description
+                  |
+                .item-time
+                  == @publisheds[index+1]
+
       .clearfix
-      
+
 .header3
   section.container
     .contact-title

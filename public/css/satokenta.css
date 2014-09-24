@@ -80,6 +80,10 @@ a:hover, a:focus {
   margin-bottom: 50px;
 }
 
+.item-block {
+  padding: 0;
+}
+
 .item {
   background-color: #FFF;
   margin-bottom: 10px;

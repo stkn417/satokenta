@@ -16,12 +16,8 @@ a:hover, a:focus {
   display: table;
   height: 320px;
   width: 100%;
-  background: url(/image/satokentacom_top_sp.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-size: cover;
+  background: url(/image/satokentacom_top_sp.png) no-repeat 0 0 fixed;
+  background-size: 100%;
 }
 
 .header2 {

@@ -50,7 +50,7 @@ class App < Sinatra::Base
 
       entry.each_element(".//link") do |link|
         if link.to_s.include?("alternate")
-          tmp = link.to_s[link.to_s.index("http://satoken.hateblo.jp")..link.to_s.size]
+          tmp = link.to_s[link.to_s.index("http://blog.satokenta.com")..link.to_s.size]
           url = tmp[0..tmp.index("\'")-1]
           @link_urls.push(url)
         end
